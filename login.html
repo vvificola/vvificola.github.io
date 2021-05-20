@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <title>sinmás</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#" class="navbar__link" id="boton-cerrar" onclick="toggleNav()">
+        <span class="material-icons"> close</span>
+      </a>
+      <a href="index.html" class="navbar__link active">
+        <span class="material-icons">account_balance</span>Home
+      </a>
+
+      <a href="#" class="navbar__link">
+        <span class="material-icons">forum</span>Foro
+      </a>
+
+      <a href="login.html" class="navbar__link">
+        <span class="material-icons">login</span>Login
+      </a>
+
+      <a href="#" class="navbar__link">
+        <span class="material-icons"> account_balance_wallet</span>Dona
+      </a>
+
+      <a href="dolly.html" class="navbar__link">
+        <span class="material-icons"> crop_free</span>Efectos
+      </a>
+
+      
+    </div>
+
+    <script>
+
+    function  toggleNav(){
+         document.querySelector(".navbar").classList.toggle("navbar--open");
+      } 
+
+
+    </script>
+    </body>
+    </html>

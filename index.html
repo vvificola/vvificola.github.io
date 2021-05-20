@@ -13,7 +13,10 @@
   </head>
   <body>
     <div class="navbar">
-      <a href="index.html" class="active navbar__link">
+      <a href="#" class="navbar__link" id="boton-cerrar" onclick="toggleNav()">
+        <span class="material-icons"> close</span>
+      </a>
+      <a href="index.html" class="navbar__link active">
         <span class="material-icons">account_balance</span>Home
       </a>
 
@@ -21,7 +24,7 @@
         <span class="material-icons">forum</span>Foro
       </a>
 
-      <a href="#" class="navbar__link">
+      <a href="login.html" class="navbar__link">
         <span class="material-icons">login</span>Login
       </a>
 
@@ -33,9 +36,7 @@
         <span class="material-icons"> crop_free</span>Efectos
       </a>
 
-      <a href="#" class="navbar__link" onclick="toggleNav()">
-        <span class="material-icons"> close</span>
-      </a>
+      
     </div>
 
     <script>
@@ -52,6 +53,9 @@
         <h1>El desastre de Annual <br />100 años después</h1>
         <h2>un repaso</h2>
         <a href="#articulo" class="text__link">
+          <span class="material-icons">south</span>
+        </a>
+        <a href="#carrusel" class="text__link-carrusel">
           <span class="material-icons">south</span>
         </a>
       </header>
@@ -117,7 +121,7 @@
           repudiandae voluptate ducimus quis rem, exercitationem incidunt animi
           totam sapiente! Sapiente soluta, a illo quos nisi enim laboriosam.
         </p>
-        <a href="#carrusel" class="text__link-carrusel">
+        <a href="#carrusel" id="carrusel" class="text__link">
           <span class="material-icons">south</span>
         </a>
       </section>
@@ -136,8 +140,41 @@
         <div class="carrusel-imagen">
           <img src="/assets/imagenes/carrusel-derecha.jpeg" alt="" />
         </div>
+        <a href="#pantalla-partida" id="pantalla-partida" class="text__link">
+          <span class="material-icons">south</span>
+        </a>
       </section>
-      
+    </div>  
+    <a href="#container-intermedio" id="pantalla-partida" class="text__link">
+    <span class="material-icons">south</span>
+    </a>
+     
+
+    
+    <div class="texto-intermedio" id="container-intermedio">
+     
+      <section class="pantalla-partida">
+       <div class="texto-izquierda-partida">
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, optio ratione! Voluptatibus asperiores dolorem totam explicabo quia officia officiis dicta recusandae voluptatem ducimus eius optio cupiditate aspernatur pariatur, quo autem temporibus inventore, deserunt sit vel laboriosam deleniti excepturi.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea at, ipsa suscipit dicta minima repellat! Animi dolores maxime dolorem ullam in, exercitationem laudantium tempora molestias aliquam amet magni, reiciendis assumenda.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati minus, beatae atque repellat earum, minima placeat temporibus dolores iste quo dicta reiciendis ullam dolorum voluptas accusantium suscipit provident incidunt sapiente consectetur. Debitis incidunt reprehenderit qui dolorem adipisci harum illum sint.</p>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati minus, beatae atque repellat earum, minima placeat temporibus dolores iste quo dicta reiciendis ullam dolorum voluptas accusantium suscipit provident incidunt sapiente consectetur. Debitis incidunt reprehenderit qui dolorem adipisci harum illum sint.</p>
+       </div>
+
+       <div class="imagen-derecha-partida">
+        <img src="/assets/imagenes/carrusel-derecha.jpeg" alt="" />
+
+       </div>
+
+
+
+
+    </section>
+
+
+
     </div>
+  
+    
   </body>
 </html>
