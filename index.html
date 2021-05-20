@@ -1,13 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="./CSS/styles.css" />
     <title>sinmás</title>
-</head>
-<body>
-    <h1>HOLA ESTO ES UNA PRUEBA</h1>
-    <h2>orueba 2</h2>
-</body>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html" class="active navbar__link">
+        <span class="material-icons">account_balance</span>Home
+      </a>
+
+      <a href="#" class="navbar__link">
+        <span class="material-icons">forum</span>Foro
+      </a>
+
+      <a href="#" class="navbar__link">
+        <span class="material-icons">login</span>Login
+      </a>
+
+      <a href="#" class="navbar__link">
+        <span class="material-icons"> account_balance_wallet</span>Dona
+      </a>
+
+      <a href="dolly.html" class="navbar__link">
+        <span class="material-icons"> crop_free</span>Efectos
+      </a>
+
+      <a href="#" class="navbar__link" onclick="toggleNav()">
+        <span class="material-icons"> close</span>
+      </a>
+    </div>
+
+    <script>
+
+    function  toggleNav(){
+         document.querySelector(".navbar").classList.toggle("navbar--open");
+      } 
+
+
+    </script>
+
+    <section class="portada" id="section-1">
+      <header class="bg">
+        <h1>El desastre de Annual <br />100 años después</h1>
+        <h2>un repaso</h2>
+        <a href="#articulo" class="text__link">
+          <span class="material-icons">south</span>
+        </a>
+      </header>
+    </section>
+
+    <div class="parte-intermedia">
+      <section id="articulo">
+        <h2 class="titular-articulo">On Friday, June the 6th 2008</h2>
+
+        <h3 class="subtitulo">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus
+          illum tenetur soluta.
+        </h3>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+          culpa veniam exercitationem praesentium voluptatem sed possimus sunt.
+          Omnis dolore ad vitae voluptas, excepturi quod eaque voluptate
+          voluptates iusto eligendi! Culpa delectus molestias provident,
+          doloribus quaerat eaque eum illum unde. Voluptatum numquam culpa
+          repudiandae voluptate ducimus quis rem, exercitationem incidunt animi
+          totam sapiente! Sapiente soluta, a illo quos nisi enim laboriosam.
+        </p>
+        <div class="contenedor-primera-foto">
+          <img
+            class="imagen-texto-intermedio"
+            src="./assets/imagenes/imagen-3.jpeg"
+            alt=""
+          />
+          <div class="titular-imagen-intermedio">
+            <div class="texto-imagen-intermedio">
+              Texto titular de prueba. Dos frases máximo.
+            </div>
+          </div>
+        </div>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+          culpa veniam exercitationem praesentium voluptatem sed possimus sunt.
+          Omnis dolore ad vitae voluptas, excepturi quod eaque voluptate
+          voluptates iusto eligendi! Culpa delectus molestias provident,
+          doloribus quaerat eaque eum illum unde. Voluptatum numquam culpa
+          repudiandae voluptate ducimus quis rem, exercitationem incidunt animi
+          totam sapiente! Sapiente soluta, a illo quos nisi enim laboriosam.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+          culpa veniam exercitationem praesentium voluptatem sed possimus sunt.
+          Omnis dolore ad vitae voluptas, excepturi quod eaque voluptate
+          voluptates iusto eligendi! Culpa delectus molestias provident,
+          doloribus quaerat eaque eum illum unde. Voluptatum numquam culpa
+          repudiandae voluptate ducimus quis rem, exercitationem incidunt animi
+          totam sapiente! Sapiente soluta, a illo quos nisi enim laboriosam.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+          culpa veniam exercitationem praesentium voluptatem sed possimus sunt.
+          Omnis dolore ad vitae voluptas, excepturi quod eaque voluptate
+          voluptates iusto eligendi! Culpa delectus molestias provident,
+          doloribus quaerat eaque eum illum unde. Voluptatum numquam culpa
+          repudiandae voluptate ducimus quis rem, exercitationem incidunt animi
+          totam sapiente! Sapiente soluta, a illo quos nisi enim laboriosam.
+        </p>
+        <a href="#carrusel" class="text__link-carrusel">
+          <span class="material-icons">south</span>
+        </a>
+      </section>
+    </div>
+    <div class="carrusel-container">
+
+      <section class="carrusel" id="carrusel">
+        <div class="carrusel-imagen">
+          <img src="/assets/imagenes/carrusel-izquierda.jpeg" alt="" />
+
+        </div>
+        <div class="carrusel-imagen">
+          <img src="/assets/imagenes/carrusel-centro.jpeg" alt="" />
+        </div>
+
+        <div class="carrusel-imagen">
+          <img src="/assets/imagenes/carrusel-derecha.jpeg" alt="" />
+        </div>
+      </section>
+      
+    </div>
+  </body>
 </html>
