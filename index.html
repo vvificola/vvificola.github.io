@@ -13,7 +13,7 @@
   </head>
   <body>
     <div class="navbar">
-      <a href="#" class="navbar__link" id="boton-cerrar" onclick="toggleNav()">
+      <a href="#" class="navbar__link" id="boton-cerrar" onclick="cerrarBarraLateral()">
         <span class="material-icons"> close</span>
       </a>
       <a href="index.html" class="navbar__link active">
@@ -35,17 +35,10 @@
       <a href="dolly.html" class="navbar__link">
         <span class="material-icons"> crop_free</span>Efectos
       </a>
-
-      
     </div>
 
     <script>
-
-    function  toggleNav(){
-         document.querySelector(".navbar").classList.toggle("navbar--open");
-      } 
-
-
+      
     </script>
 
     <section class="portada" id="section-1">
@@ -127,11 +120,9 @@
       </section>
     </div>
     <div class="carrusel-container">
-
       <section class="carrusel" id="carrusel">
         <div class="carrusel-imagen">
           <img src="/assets/imagenes/carrusel-izquierda.jpeg" alt="" />
-
         </div>
         <div class="carrusel-imagen">
           <img src="/assets/imagenes/carrusel-centro.jpeg" alt="" />
@@ -144,37 +135,47 @@
           <span class="material-icons">south</span>
         </a>
       </section>
-    </div>  
-    <a href="#container-intermedio" id="pantalla-partida" class="text__link">
-    <span class="material-icons">south</span>
-    </a>
-     
-
-    
-    <div class="texto-intermedio" id="container-intermedio">
-     
-      <section class="pantalla-partida">
-       <div class="texto-izquierda-partida">
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, optio ratione! Voluptatibus asperiores dolorem totam explicabo quia officia officiis dicta recusandae voluptatem ducimus eius optio cupiditate aspernatur pariatur, quo autem temporibus inventore, deserunt sit vel laboriosam deleniti excepturi.</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea at, ipsa suscipit dicta minima repellat! Animi dolores maxime dolorem ullam in, exercitationem laudantium tempora molestias aliquam amet magni, reiciendis assumenda.</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati minus, beatae atque repellat earum, minima placeat temporibus dolores iste quo dicta reiciendis ullam dolorum voluptas accusantium suscipit provident incidunt sapiente consectetur. Debitis incidunt reprehenderit qui dolorem adipisci harum illum sint.</p>
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati minus, beatae atque repellat earum, minima placeat temporibus dolores iste quo dicta reiciendis ullam dolorum voluptas accusantium suscipit provident incidunt sapiente consectetur. Debitis incidunt reprehenderit qui dolorem adipisci harum illum sint.</p>
-       </div>
-
-       <div class="imagen-derecha-partida">
-        <img src="/assets/imagenes/carrusel-derecha.jpeg" alt="" />
-
-       </div>
-
-
-
-
-    </section>
-
-
-
     </div>
-  
-    
+    <a href="#container-intermedio" id="pantalla-partida" class="text__link">
+      <span class="material-icons">south</span>
+    </a>
+
+    <div class="texto-intermedio" id="container-intermedio">
+      <section class="pantalla-partida">
+        <div class="texto-izquierda-partida">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
+            optio ratione! Voluptatibus asperiores dolorem totam explicabo quia
+            officia officiis dicta recusandae voluptatem ducimus eius optio
+            cupiditate aspernatur pariatur, quo autem temporibus inventore,
+            deserunt sit vel laboriosam deleniti excepturi.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea at, ipsa
+            suscipit dicta minima repellat! Animi dolores maxime dolorem ullam
+            in, exercitationem laudantium tempora molestias aliquam amet magni,
+            reiciendis assumenda.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            minus, beatae atque repellat earum, minima placeat temporibus
+            dolores iste quo dicta reiciendis ullam dolorum voluptas accusantium
+            suscipit provident incidunt sapiente consectetur. Debitis incidunt
+            reprehenderit qui dolorem adipisci harum illum sint.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
+            minus, beatae atque repellat earum, minima placeat temporibus
+            dolores iste quo dicta reiciendis ullam dolorum voluptas accusantium
+            suscipit provident incidunt sapiente consectetur. Debitis incidunt
+            reprehenderit qui dolorem adipisci harum illum sint.
+          </p>
+        </div>
+
+        <div class="imagen-derecha-partida">
+          <img src="/assets/imagenes/carrusel-derecha.jpeg" alt="" />
+        </div>
+      </section>
+    </div>
   </body>
 </html>
