@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,11 +13,30 @@
     />
     <link rel="stylesheet" href="./CSS/styles.css" />
     <title>sinmás</title>
+    
+    <script src="main.js"></script>
+    <script>
+      function desconectar() {
+        sessionStorage.removeItem("usuarioLogueado");
+        sessionStorage.removeItem("usuarioIntentando");
+        sessionStorage.removeItem("claveIntentando");
+        location.reload();
+      }
+    </script>
   </head>
-  <body>
+
+
+
+
+  <body onload="controlar()">
     <div class="navbar">
-      <a href="#" class="navbar__link" id="boton-cerrar" onclick="cerrarBarraLateral()">
-        <span class="material-icons"> close</span>
+      <a
+        href="#"
+        class="navbar__link"
+        id="boton-cerrar"
+        onclick="cerrarBarraLateral()"
+      >
+        <span class="material-icons">close</span>
       </a>
       <a href="index.html" class="navbar__link active">
         <span class="material-icons">account_balance</span>Home
@@ -37,18 +59,19 @@
       </a>
     </div>
 
-    <script>
-      
-    </script>
-
     <section class="portada" id="section-1">
+      <a href="#" class="text__link-carrusel" onclick="abrirBarraLateral()">
+        <span class="material-icons" id="boton-abrir-navegacion">south</span>
+      </a>
+
+      <a href="#" class="text__link-carrusel"
+        ><button id="deslogarse" onclick="desconectar()">deslogarse</button></a
+      >
+
       <header class="bg">
         <h1>El desastre de Annual <br />100 años después</h1>
-        <h2>un repaso</h2>
+        <h2>cronologia de un desastre</h2>
         <a href="#articulo" class="text__link">
-          <span class="material-icons">south</span>
-        </a>
-        <a href="#carrusel" class="text__link-carrusel">
           <span class="material-icons">south</span>
         </a>
       </header>
@@ -75,7 +98,7 @@
         <div class="contenedor-primera-foto">
           <img
             class="imagen-texto-intermedio"
-            src="./assets/imagenes/imagen-3.jpeg"
+            src="/vvificola.github.io/assets/imagenes/imagen-3.jpeg"
             alt=""
           />
           <div class="titular-imagen-intermedio">
@@ -122,14 +145,23 @@
     <div class="carrusel-container">
       <section class="carrusel" id="carrusel">
         <div class="carrusel-imagen">
-          <img src="/assets/imagenes/carrusel-izquierda.jpeg" alt="" />
+          <img
+            src="/vvificola.github.io/assets/imagenes/carrusel-izquierda.jpeg"
+            alt=""
+          />
         </div>
         <div class="carrusel-imagen">
-          <img src="/assets/imagenes/carrusel-centro.jpeg" alt="" />
+          <img
+            src="/vvificola.github.io/assets/imagenes/carrusel-centro.jpeg"
+            alt=""
+          />
         </div>
 
         <div class="carrusel-imagen">
-          <img src="/assets/imagenes/carrusel-derecha.jpeg" alt="" />
+          <img
+            src="/vvificola.github.io/assets/imagenes/carrusel-derecha.jpeg"
+            alt=""
+          />
         </div>
         <a href="#pantalla-partida" id="pantalla-partida" class="text__link">
           <span class="material-icons">south</span>
