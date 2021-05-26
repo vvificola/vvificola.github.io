@@ -36,7 +36,8 @@ function controlar(){
 		// ocultamos formulario de login y mostramos desconectar
 		var url=location.url;
 		$("#login").hide();
-		$("#deslogarse").show();	
+		alert("usuario logado correctamente")
+				$("#deslogarse").show();	
 		
 	} else {
 		if (sessionStorage.getItem("usuarioIntentando")) {
