@@ -67,6 +67,26 @@ html {
   border-radius: 5px;
   /* opacity: 0.6; */
 }
+.text__link-carrusel #registro {
+  font-size: 15px;
+  margin-top: 3%;
+  margin-left: 92%;
+  position: fixed;
+  background-color: rgba(255, 241, 113, 0.15);
+  /* opacity: 0.6; */
+  border: none;
+  cursor: pointer;
+  color: black;
+  z-index: 1;
+  padding: 8px 8px 8px 8px;
+}
+
+.text__link-carrusel #registro:hover {
+  transform: scale(1.03);
+  background-color: rgba(224, 204, 20, 0.85);
+  border-radius: 5px;
+  /* opacity: 0.6; */
+}r
 
 .text__link-carrusel #boton-abrir-navegacion:hover {
   font-size: 39px;
@@ -124,7 +144,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-flow: column;
-  z-index: 1;
+
 }
 
 h1 {
@@ -270,6 +290,7 @@ h1 {
   padding: 0px 20px 20px 20px;
   align-items: center;
   outline: 1px solid black;
+  vertical-align:text-top;
   
  
 }
@@ -422,6 +443,50 @@ h1 {
   width: 60%;
   padding: 20px 60px 60px 20px;
 }
+.segundo-texto .titular-imagen-intermedio{
+   
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 1.5s ease;
+    background-color: rgba(255, 245, 154, 0.45);
+    color: black;
+    
+  }
+
+  .segundo-texto .titular-imagen-intermedio:hover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: 1.5s ease;
+    background-color: rgba(255, 245, 154, 0.45);
+    color: black;
+    font-size: 40px;
+    vertical-align: text-bottom;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* blog */
 
@@ -498,7 +563,7 @@ h1 {
 }
 
 
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
 
   .texto-izquierda-partida{
     line-height: 34px;
@@ -507,7 +572,13 @@ h1 {
 
     font-size: 24px;
     margin-bottom: 52px;
-    
+  
+  }
+
+
+  .segundo-texto-container{
+    position:relative;
+    margin-top: 1100px;
   }
 }
 /* login */

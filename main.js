@@ -24,6 +24,8 @@ function controlar(){
 	// 2 - usuario intentando ingresar
 	// 3 - usuario con sesion iniciada
 	
+	$("#login").show();
+	$("#deslogarse").show();
 	
 	
 			
@@ -33,7 +35,7 @@ function controlar(){
 		// y con la sesión activa pues no se ha desconectado aún
 		// ocultamos formulario de login y mostramos desconectar
 		var url=location.url;
-		
+		$("#login").hide();
 		$("#deslogarse").show();	
 		
 	} else {
@@ -50,7 +52,7 @@ function controlar(){
 		} else {
 			// estado 1 de nuestro diagrama de estados - sin usuario
 			// mostramos formulario de login y ocultamos desconectar
-			
+			$("#login").show();
 			$("#deslogarse").hide();
 		}
 	}
