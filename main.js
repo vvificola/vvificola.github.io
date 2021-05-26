@@ -25,7 +25,7 @@ function controlar(){
 	// 3 - usuario con sesion iniciada
 	
 	
-	$("#deslogarse").hide();
+	
 			
 	if (sessionStorage.getItem("usuarioLogueado")) {
 		// estado 3 de nuestro diagrama de estados - con usuario
