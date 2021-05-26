@@ -118,18 +118,12 @@ function controlar(){
 	}
 
 	function desconectar(){
+		$("#deslogarse").hide();
 		sessionStorage.removeItem("usuarioLogueado");
 		sessionStorage.removeItem("usuarioIntentando");
 		sessionStorage.removeItem("claveIntentando");
 		location.reload();
 	}
 	
-    function cerrarBarraLateral() {
-        document.querySelector(".navbar").classList.toggle("navbar--close");}
-
-
- 
-      function abrirBarraLateral() {
-        document.querySelector(".navbar").classList.toggle("navbar--close");
-      }
+    
    
