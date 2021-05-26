@@ -135,7 +135,7 @@ html {
 }
 
 .bg {
-  background-image: url(/Publico/vvificola.github.io/assets/imagenes/portada.jpeg);
+  background-image: url(/assets/imagenes/portada.jpeg);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
