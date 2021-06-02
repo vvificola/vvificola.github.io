@@ -11,7 +11,7 @@ body {
   color: black;
   background-color: rgb(243,242,235);
   font-family: verdana, helvetica, arial, sans-serif;
-  font-size: 73%;  /* Enables font size scaling in MSIE */
+  font-size: 93%;  /* Enables font size scaling in MSIE */
   margin: 0;
   padding: 0;
 }
@@ -21,7 +21,7 @@ html > body {
 }
 
 acronym, .titleTip {
-  border-bottom: 1px dotted rgb(168,140,83);
+  border-bottom: 1px dotted rgba(230, 220, 131, 0.685);
   cursor: help;
   margin: 0;
   padding: 0;
@@ -42,10 +42,11 @@ acronym, .titleTip {
 
 #header {
   color: inherit;
-  background-color: rgb(184,38,25);
+  background-color: rgba(255, 233, 31, 0.3);
 }
 
 .headerTitle {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0.25em 4mm 0.25em 4mm;
 }
@@ -54,7 +55,7 @@ acronym, .titleTip {
   color: black;
   background-color: transparent;
   text-decoration: none;
-  font-size: 110%;  /* For MSIE */
+  font-size: 110%;  
   font-weight: bold;
   font-style: italic;
 }
@@ -122,7 +123,7 @@ acronym, .titleTip {
 }
 
 .leftSideBar a {
-  color: rgb(166,140,83);
+  color: black;
   background-color: transparent;
   text-decoration: none;
 }
@@ -174,7 +175,7 @@ acronym, .titleTip {
 
 .rightSideBar .sideBarTitle {
   color: black;
-  background-color: rgb(230,223,207);
+  background-color: rgba(255, 233, 31, 0.3);
   font-weight: bold;
   margin: 1.25ex 1ex;
   padding: 0.9ex 1ex;
@@ -223,7 +224,7 @@ acronym, .titleTip {
 }
 
 #main-copy h1 {
-  color: rgb(166,140,83);
+  color: black;
   background-color: transparent;
   font-family: arial, verdana, helvetica, sans-serif;
   font-size: 175%;
@@ -236,7 +237,7 @@ acronym, .titleTip {
 }
 
 #main-copy a {
-  color: rgb(168,140,83);
+  color:black;
   background-color: transparent;
   text-decoration: underline;
 }
@@ -266,7 +267,7 @@ dd {
 
 #footer {
   color: black;
-  background-color: rgb(230,223,207);
+  background-color: rgba(255, 233, 31, 0.3);
   font-size: 92%;
   text-align: center;
   line-height: 1.25em;

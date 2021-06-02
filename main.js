@@ -25,7 +25,7 @@ function controlar(){
 	// 3 - usuario con sesion iniciada
 	
 	$("#login").show();
-	$("#deslogarse").show();
+	$("#deslogarse").hide();
 	
 	
 			
@@ -78,7 +78,7 @@ function controlar(){
 		} else {
 		  document.getElementById("mensaje").innerHTML = "Este navegador no soporta web storage...";
 		}
-		//window.location.assing("https://sralex16.github.io/publico/proyecto_tercer_trimestre.html");
+		
 	}
 	
 	function validarXML() {
