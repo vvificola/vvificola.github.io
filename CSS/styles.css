@@ -346,7 +346,7 @@ h1 {
   width: 100%;
  margin-left: auto;
  margin-right: auto;
- padding-left: 150px;
+ 
 }
 .carrusel {
   display: flex;
@@ -578,7 +578,7 @@ h1 {
 
   .segundo-texto-container{
     position:relative;
-    margin-top: 1100px;
+    margin-top: 1200px;
   }
 }
 /* login */
